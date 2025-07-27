@@ -58,8 +58,8 @@ export async function loginUser(req: Request, res: Response) {
     res
       .cookie("angietoken", token, {
         httpOnly: true,
-        secure: false,
-        sameSite: "lax",
+        secure: true,
+        sameSite: "none",
       })
       .status(200)
       .send(otherProperities);
