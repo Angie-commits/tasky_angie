@@ -4,7 +4,7 @@ import zxcvbn from "zxcvbn";
 export function checkPasswordStrength(
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) {
   const { password } = req.body;
   const strength = zxcvbn(password);

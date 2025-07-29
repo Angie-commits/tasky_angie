@@ -3,7 +3,7 @@ import { Request, Response, NextFunction } from "express";
 export function checkFieldsTask(
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) {
   const { title, description } = req.body;
   if (!title) {

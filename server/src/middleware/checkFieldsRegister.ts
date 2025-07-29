@@ -3,7 +3,7 @@ import { NextFunction, Request, Response } from "express";
 export function checkFieldsRegister(
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) {
   const { firstName, lastName, userName, email, password } = req.body;
   if (!firstName) {

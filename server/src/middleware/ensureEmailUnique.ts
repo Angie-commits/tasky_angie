@@ -6,7 +6,7 @@ const client = new PrismaClient();
 export async function ensureUniqueEmail(
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) {
   const { email } = req.body;
   const similarEmail = await client.user.findFirst({

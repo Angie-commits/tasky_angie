@@ -102,7 +102,7 @@ const EditTask = () => {
         : markTaskAsComplete(id as string),
     onSuccess: () => {
       toast.success(
-        data?.isCompleted ? "Marked as Incomplete" : "Marked as Complete"
+        data?.isCompleted ? "Marked as Incomplete" : "Marked as Complete",
       );
       navigate(data?.isCompleted ? "/tasks" : "/completed");
     },
@@ -182,8 +182,8 @@ const EditTask = () => {
                   ? "Reverting..."
                   : "Marking..."
                 : data?.isCompleted
-                ? "Mark as Incomplete"
-                : "Mark as Complete"}
+                  ? "Mark as Incomplete"
+                  : "Mark as Complete"}
             </Button>
           </CardActions>
         </form>

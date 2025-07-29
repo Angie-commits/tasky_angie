@@ -20,7 +20,7 @@ const Hero = () => {
 
           <Typography variant="h6" color="text.secondary">
             Organize your tasks, stay productive, and never miss a deadline
-            again. Tasky is your personal task management assistant — simple,
+            again. Tasky is your personal task management assistant simple,
             fast, and reliable.
           </Typography>
 

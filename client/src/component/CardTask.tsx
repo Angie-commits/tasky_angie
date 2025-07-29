@@ -82,13 +82,13 @@ const CardTask = ({
       toast.success(
         variant === "trash"
           ? "Successfully restored task!"
-          : "Successfully deleted task!"
+          : "Successfully deleted task!",
       );
       navigate(variant === "trash" ? "/tasks" : "/trash");
     },
     onError: () => {
       toast.error(
-        variant === "trash" ? "Failed to restore task" : "Error deleting task"
+        variant === "trash" ? "Failed to restore task" : "Error deleting task",
       );
     },
   });
@@ -101,7 +101,7 @@ const CardTask = ({
       toast.success(
         status === "complete"
           ? "Marked task as incomplete!"
-          : "Marked task as complete!"
+          : "Marked task as complete!",
       );
       navigate(status === "complete" ? "/tasks" : "/completed");
     },
@@ -109,7 +109,7 @@ const CardTask = ({
       toast.error(
         status === "complete"
           ? "Failed to mark as incomplete"
-          : "Failed to mark as complete"
+          : "Failed to mark as complete",
       );
     },
   });
@@ -144,8 +144,8 @@ const CardTask = ({
                     ? "Marking..."
                     : "Reverting..."
                   : status === "incomplete"
-                  ? "Mark as Complete"
-                  : "Mark as Incomplete"}
+                    ? "Mark as Complete"
+                    : "Mark as Incomplete"}
               </Button>
 
               <Button
@@ -172,8 +172,8 @@ const CardTask = ({
                 ? "Restoring..."
                 : "Deleting..."
               : variant === "trash"
-              ? "Restore"
-              : "Delete"}
+                ? "Restore"
+                : "Delete"}
           </Button>
         </Stack>
       </CardActions>

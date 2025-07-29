@@ -160,7 +160,7 @@ export async function updateUserPassword(req: Request, res: Response) {
 
     const comparePassword = await bcrypt.compare(
       currentPassword,
-      user.password
+      user.password,
     );
 
     if (!comparePassword) {

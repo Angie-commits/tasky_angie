@@ -5,7 +5,7 @@ import { UserPayload } from "../types";
 export function checkUserPresent(
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) {
   const { angietoken } = req.cookies;
 
@@ -29,6 +29,6 @@ export function checkUserPresent(
       }
       req.user = { id: (decoded as JwtPayload).id } as UserPayload;
       next();
-    }
+    },
   );
 }

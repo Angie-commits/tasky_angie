@@ -3,7 +3,7 @@ import { NextFunction, Request, Response } from "express";
 export function checkLoginFields(
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) {
   const { email, password } = req.body;
   if (!email) {

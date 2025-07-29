@@ -17,8 +17,8 @@ const Footer = () => {
               Tasky
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Stay organized and boost your productivity with Tasky — your
-              all-in-one task manager.
+              Stay organized and boost your productivity with Tasky your number
+              one task manager.
             </Typography>
           </Grid>
 
@@ -46,7 +46,7 @@ const Footer = () => {
         <Divider sx={{ my: 4 }} />
 
         <Typography variant="body2" color="#f24a50" align="center">
-          © {new Date().getFullYear()} Tasky. Made with love by Angie
+          © {new Date().getFullYear()} Tasky. With love, Angie
         </Typography>
       </Container>
     </Box>

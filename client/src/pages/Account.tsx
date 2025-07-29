@@ -52,7 +52,7 @@ const Account = () => {
       {
         method: "POST",
         body: formData,
-      }
+      },
     );
 
     const data = await res.json();
@@ -104,7 +104,7 @@ const Account = () => {
         setNewPassword("");
       },
       onError: (err: any) => toast.error(err.message),
-    }
+    },
   );
 
   const handleLogout = async () => {
@@ -222,8 +222,8 @@ const Account = () => {
                 {isUploadingImage
                   ? "Uploading..."
                   : isUpdatingProfile
-                  ? "Updating..."
-                  : "Save Changes"}
+                    ? "Updating..."
+                    : "Save Changes"}
               </Button>
             </CardActions>
           </Card>

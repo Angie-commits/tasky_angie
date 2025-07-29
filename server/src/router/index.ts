@@ -33,7 +33,7 @@ router.post(
   checkFieldsRegister,
   ensureUniqueEmail,
   checkPasswordStrength,
-  registerUser
+  registerUser,
 );
 router.post("/auth/login", checkLoginFields, loginUser);
 router.post("/auth/logout", logOut);

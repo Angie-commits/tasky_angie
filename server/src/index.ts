@@ -9,7 +9,7 @@ app.use(
   cors({
     origin: "https://tasky-angie.vercel.app",
     credentials: true,
-  })
+  }),
 );
 
 app.use(express.json());
